@@ -1,0 +1,13 @@
+{
+  "name": "devops-adventure",
+  "version": "1.0.0",
+  "description": "A Node.js single-tier 2D platformer game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

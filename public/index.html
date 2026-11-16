@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevOps Adventure - a Node.js platformer game">
+    <title>DevOps Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo"><span>🎮</span> DEVOPS ADVENTURE</div>
+        <div class="header-info">
+            <span>NODE.JS GAME</span>
+            <span class="server-status">● SERVER ONLINE</span>
+        </div>
+    </header>
+
+    <main class="game-container">
+        <section class="game-heading">
+            <h1>Welcome, Player!</h1>
+            <p>Collect coins, avoid enemies and reach the finish line.</p>
+        </section>
+
+        <section class="scoreboard" aria-label="Game statistics">
+            <div class="score-card"><span>PLAYER</span><strong>HERO</strong></div>
+            <div class="score-card"><span>COINS</span><strong id="coinCount">0</strong></div>
+            <div class="score-card"><span>SCORE</span><strong id="score">0</strong></div>
+            <div class="score-card"><span>LIVES</span><strong id="lives">❤️ ❤️ ❤️</strong></div>
+        </section>
+
+        <section class="game-area">
+            <canvas id="gameCanvas" width="960" height="540">
+                Your browser does not support HTML Canvas.
+            </canvas>
+            <div id="gameOverlay" class="game-overlay">
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">DEVOPS ADVENTURE</h2>
+                    <p id="overlayMessage">Your adventure starts here!</p>
+                    <button id="startButton" type="button">START GAME</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h3>HOW TO PLAY</h3>
+            <div class="instruction-items">
+                <div>⬅️ ➡️ Move Left / Right</div>
+                <div>⬆️ / SPACE Jump</div>
+                <div>🪙 Collect Coins</div>
+                <div>👾 Avoid Enemies</div>
+            </div>
+        </section>
+
+        <section class="mobile-controls" aria-label="Touch controls">
+            <button id="leftButton" type="button" aria-label="Move left">◀</button>
+            <button id="jumpButton" type="button">⬆ JUMP</button>
+            <button id="rightButton" type="button" aria-label="Move right">▶</button>
+        </section>
+
+        <footer>Built using Node.js + Express.js | DevOps Learning Project</footer>
+    </main>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

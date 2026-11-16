@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+
+# Application logs
+logs/*
+!logs/.gitkeep
+
+# Environment variables
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Debug files
+npm-debug.log*
